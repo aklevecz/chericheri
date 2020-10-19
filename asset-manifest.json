@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/chericheri/static/css/main.a9aebfa1.chunk.css",
-    "main.js": "/chericheri/static/js/main.77c382d0.chunk.js",
-    "main.js.map": "/chericheri/static/js/main.77c382d0.chunk.js.map",
+    "main.js": "/chericheri/static/js/main.38294e84.chunk.js",
+    "main.js.map": "/chericheri/static/js/main.38294e84.chunk.js.map",
     "runtime-main.js": "/chericheri/static/js/runtime-main.de21bcd1.js",
     "runtime-main.js.map": "/chericheri/static/js/runtime-main.de21bcd1.js.map",
     "static/js/2.1f6d271c.chunk.js": "/chericheri/static/js/2.1f6d271c.chunk.js",
     "static/js/2.1f6d271c.chunk.js.map": "/chericheri/static/js/2.1f6d271c.chunk.js.map",
     "index.html": "/chericheri/index.html",
-    "precache-manifest.f5e917652f4563ed5c4fad3cfe08588c.js": "/chericheri/precache-manifest.f5e917652f4563ed5c4fad3cfe08588c.js",
+    "precache-manifest.bb4331b94155aa96e14451bd9c2de02a.js": "/chericheri/precache-manifest.bb4331b94155aa96e14451bd9c2de02a.js",
     "service-worker.js": "/chericheri/service-worker.js",
     "static/css/main.a9aebfa1.chunk.css.map": "/chericheri/static/css/main.a9aebfa1.chunk.css.map",
     "static/js/2.1f6d271c.chunk.js.LICENSE.txt": "/chericheri/static/js/2.1f6d271c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.de21bcd1.js",
     "static/js/2.1f6d271c.chunk.js",
     "static/css/main.a9aebfa1.chunk.css",
-    "static/js/main.77c382d0.chunk.js"
+    "static/js/main.38294e84.chunk.js"
   ]
 }
