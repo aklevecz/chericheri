@@ -52,6 +52,7 @@ export default function Nav() {
             fontWeight: "bold",
             color: openNav ? "black" : "white",
             transition: "color .3s",
+            fontSize: "1.5rem",
           }}
         >
           CHERICHERI

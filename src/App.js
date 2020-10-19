@@ -3,10 +3,10 @@ import Nav from "./Nav";
 
 function App() {
   const [filterNum, setFilterNum] = useState(0);
-  useEffect(() => {
-    console.log(filterNum);
-    setTimeout(() => setFilterNum(360 + filterNum), 2000);
-  }, [filterNum]);
+  // useEffect(() => {
+  //   console.log(filterNum);
+  //   setTimeout(() => setFilterNum(360 + filterNum), 2000);
+  // }, [filterNum]);
   const jar = "https://wendellen.github.io/chericheriINVERT/assets/jar1.jpg";
   return (
     <div>

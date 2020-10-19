@@ -8,6 +8,5 @@ body {
 }
 
 img {
-  filter: hue-rotate(0);
-  transition: filter 2s;
+  animation: filterAnimation 20s infinite ease-in;
 }
