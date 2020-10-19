@@ -23,9 +23,9 @@ const Content = styled.div`
   left: ${(props) => props.contentLeft}px;
   color: "black";
   top: 80px;
-  transition: left 0.7s ease-in;
+  transition: left 0.5s ease-in;
   &.out {
-    transition: left 0.3s ease-out;
+    transition: left 0.1s ease-out;
   }
   div {
     margin: 10px 0px;

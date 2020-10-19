@@ -53,9 +53,10 @@ export default function Nav() {
             color: openNav ? "black" : "white",
             transition: "color .3s",
             fontSize: "1.5rem",
+            fontFamily: "'Open Sans', sans-serif",
           }}
         >
-          CHERICHERI
+          CHERI CHERI
         </div>
         <Cart fill={openNav ? "black" : "white"} />
       </Wrapper>

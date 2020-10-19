@@ -1,32 +1,26 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
+import Row from "./Row";
 
 function App() {
-  const [filterNum, setFilterNum] = useState(0);
-  // useEffect(() => {
-  //   console.log(filterNum);
-  //   setTimeout(() => setFilterNum(360 + filterNum), 2000);
-  // }, [filterNum]);
   const jar = "https://wendellen.github.io/chericheriINVERT/assets/jar1.jpg";
+  const cheri =
+    "https://wendellen.github.io/chericheriINVERT/assets/cheri_logo_hotpink_1.png";
   return (
     <div>
       <Nav />
-      <img
-        width="50%"
-        alt="hi"
-        src="https://wendellen.github.io/chericheriINVERT/assets/cheri_logo_hotpink_1.png"
-        style={{ margin: "auto", display: "block" }}
-      />
-      <img
-        width="50%"
-        alt="hi"
-        src={jar}
+      <Row src={cheri} />
+      <Row src={jar} />
+      <div
         style={{
-          margin: "50px auto",
-          display: "block",
-          filter: `hue-rotate(${filterNum}deg)`,
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          left: 0,
+          top: 0,
+          mixBlendMode: "difference",
         }}
-      />
+      ></div>
     </div>
   );
 }

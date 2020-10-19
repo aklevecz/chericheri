@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap");
 html,
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
   background: black;
 }
 
