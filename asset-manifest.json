@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/chericheri/static/css/main.794a167f.chunk.css",
-    "main.js": "/chericheri/static/js/main.124e47be.chunk.js",
-    "main.js.map": "/chericheri/static/js/main.124e47be.chunk.js.map",
+    "main.js": "/chericheri/static/js/main.ed722150.chunk.js",
+    "main.js.map": "/chericheri/static/js/main.ed722150.chunk.js.map",
     "runtime-main.js": "/chericheri/static/js/runtime-main.de21bcd1.js",
     "runtime-main.js.map": "/chericheri/static/js/runtime-main.de21bcd1.js.map",
-    "static/js/2.ff6d5b9e.chunk.js": "/chericheri/static/js/2.ff6d5b9e.chunk.js",
-    "static/js/2.ff6d5b9e.chunk.js.map": "/chericheri/static/js/2.ff6d5b9e.chunk.js.map",
+    "static/js/2.8158839c.chunk.js": "/chericheri/static/js/2.8158839c.chunk.js",
+    "static/js/2.8158839c.chunk.js.map": "/chericheri/static/js/2.8158839c.chunk.js.map",
     "index.html": "/chericheri/index.html",
-    "precache-manifest.9c847a36dcddd555d10ceb35b2bbfd62.js": "/chericheri/precache-manifest.9c847a36dcddd555d10ceb35b2bbfd62.js",
+    "precache-manifest.c143cbb1a352f7a0a70080f9a7d2da7c.js": "/chericheri/precache-manifest.c143cbb1a352f7a0a70080f9a7d2da7c.js",
     "service-worker.js": "/chericheri/service-worker.js",
     "static/css/main.794a167f.chunk.css.map": "/chericheri/static/css/main.794a167f.chunk.css.map",
-    "static/js/2.ff6d5b9e.chunk.js.LICENSE.txt": "/chericheri/static/js/2.ff6d5b9e.chunk.js.LICENSE.txt"
+    "static/js/2.8158839c.chunk.js.LICENSE.txt": "/chericheri/static/js/2.8158839c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.de21bcd1.js",
-    "static/js/2.ff6d5b9e.chunk.js",
+    "static/js/2.8158839c.chunk.js",
     "static/css/main.794a167f.chunk.css",
-    "static/js/main.124e47be.chunk.js"
+    "static/js/main.ed722150.chunk.js"
   ]
 }
