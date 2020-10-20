@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Nav from "./Nav";
+import Popup from "./Popup";
+import Over21 from "./Popup/Over21";
 import Row from "./Row";
 
 function App() {
@@ -21,6 +23,9 @@ function App() {
           mixBlendMode: "difference",
         }}
       ></div>
+      <Popup>
+        <Over21 />
+      </Popup>
     </div>
   );
 }
