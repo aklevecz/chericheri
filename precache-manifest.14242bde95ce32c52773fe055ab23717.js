@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2386e6d978d383765f73dd601191996a",
+    "revision": "f556e780b73b7caa55ed1dc8f261e68a",
     "url": "/chericheri/index.html"
   },
   {
-    "revision": "a3ebfd365d5313ce11a8",
+    "revision": "23308d1b778c4634c59f",
     "url": "/chericheri/static/css/main.21c887d5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chericheri/static/js/2.282df08a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a3ebfd365d5313ce11a8",
-    "url": "/chericheri/static/js/main.c1c51e80.chunk.js"
+    "revision": "23308d1b778c4634c59f",
+    "url": "/chericheri/static/js/main.2b3734c2.chunk.js"
   },
   {
     "revision": "db92b0281da43e0b921d",
