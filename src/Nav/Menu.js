@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import GetSome from "../Bits/Buttons/GetSome";
+import Link from "./Link";
 
 const Background = styled.div`
   width: ${(props) => props.width + props.width * props.m}px;
   height: ${(props) => props.height + props.height * 0.0}px;
-  background: white;
+  background: black;
+  color: white;
   position: fixed;
   z-index: 0;
   transform: rotate(45deg);
@@ -21,25 +24,30 @@ const Background = styled.div`
 const Content = styled.div`
   position: absolute;
   left: ${(props) => props.contentLeft}px;
-  color: "black";
-  top: 80px;
+  color: white;
+  top: 94px;
   transition: left 0.5s ease-in;
   &.out {
     transition: left 0.1s ease-out;
   }
-  div {
-    margin: 10px 0px;
-  }
   z-index: 2;
+  & div {
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
 `;
 
-const Button = styled.button`
-  background: black;
-  color: white;
-  border: none;
-  padding: 14px;
-  letter-spacing: 3px; ;
+const LinkGroup = styled.div`
+  margin: 20px;
 `;
+
+const TextMe = () => (
+  <div style={{ margin: 20 }}>
+    <div>TEXT "🍒" IF YOU NEED</div>
+    <div>ANYTHING</div>
+    <div>+1 (408) 799-6629</div>
+  </div>
+);
 
 export default function Menu({ openNav }) {
   const a = window.innerWidth;
@@ -59,13 +67,50 @@ export default function Menu({ openNav }) {
       />
       <Content
         className={openNav ? "in" : "out"}
-        contentLeft={openNav ? 49 : -149}
+        contentLeft={openNav ? 49 : -200}
       >
-        <Button>ORDER SOME</Button>
-        <div>Shop</div>
-        <div>Faq</div>
-        <div>About</div>
-        <div>Contact</div>
+        <GetSome inverted={true} />
+        <LinkGroup>
+          <div>
+            <Link name="about" />
+          </div>
+          <div>
+            <Link name="find-us" />
+          </div>
+        </LinkGroup>
+        <LinkGroup>
+          <div>
+            <Link name="faq" />
+          </div>
+          <div>
+            <Link name="blog" />
+          </div>
+        </LinkGroup>
+        <LinkGroup>
+          <div>
+            <Link name="lookbook" />
+          </div>
+          <div>
+            <Link name="tutorials" />
+          </div>
+        </LinkGroup>
+        <LinkGroup>
+          <div>
+            <Link name="wholesale" />
+          </div>
+          <div>
+            <Link name="terms" />
+          </div>
+        </LinkGroup>
+        <LinkGroup>
+          <div>
+            <Link name="collabs" />
+          </div>
+          <div>
+            <Link name="pr" />
+          </div>
+        </LinkGroup>
+        <TextMe />
       </Content>
     </>
   );

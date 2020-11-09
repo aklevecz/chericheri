@@ -55,7 +55,6 @@ export default function Over21() {
       welcomeRef.current.style.opacity = 0;
       setTimeout(() => popContext.close(), 1000);
     } else if (affirmation === false) {
-      console.log("frog");
       setTimeout(() => (window.location.href = "https://disney.com"), 1000);
     }
   }, [affirmation, popContext]);

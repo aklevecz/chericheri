@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Cart from "../Icons/Cart";
+import Cart from "../Bits/Icons/Cart";
 import Menu from "./Menu";
 
 const Container = styled.div``;
@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   color: white;
   transition: color 3.5s, fill 0.5s;
   z-index: 2;
+  margin: 12px 62px 0px;
 `;
 
 const MenuButton = styled.div`
@@ -29,7 +30,8 @@ const MenuButton = styled.div`
   height: 30px;
   padding-top: 40px;
   line-height: 35px;
-  background: white;
+  background: black;
+  color: white;
   font-size: 0.8rem;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -38,7 +40,7 @@ const MenuButton = styled.div`
 `;
 
 export default function Nav() {
-  const [openNav, setOpenNav] = useState(false);
+  const [openNav, setOpenNav] = useState(true);
   const toggleOpenNav = () => setOpenNav(!openNav);
   return (
     <Container>
@@ -49,16 +51,16 @@ export default function Nav() {
       <Wrapper>
         <div
           style={{
-            fontWeight: "bold",
-            color: openNav ? "black" : "white",
+            fontWeight: 800,
+            color: openNav ? "white" : "black",
             transition: "color .3s",
-            fontSize: "1.5rem",
+            fontSize: "1.7rem",
             fontFamily: "'Open Sans', sans-serif",
           }}
         >
           CHERI CHERI
         </div>
-        <Cart fill={openNav ? "black" : "white"} />
+        <Cart fill={openNav ? "white" : "black"} />
       </Wrapper>
     </Container>
   );

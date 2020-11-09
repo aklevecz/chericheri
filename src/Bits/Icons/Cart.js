@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Cart({ width = 34, fill = "white" }) {
+export default function Cart({ width = 34, fill = "black" }) {
   return (
     <div style={{ width, fill, transition: "fill .3s" }}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
