@@ -33,10 +33,10 @@ function App() {
           style={{ width: "100%", filter: "contrast(1.2)" }}
         />
       </div>
-      <SwirlPane file="swirl1" />
+      {/* <SwirlPane file="swirl1" />
       <div style={{ marginTop: -7 }}>
         <SwirlPane file="swirl2" />
-      </div>
+      </div> */}
       <Metaphors />
       {/* <div
         style={{

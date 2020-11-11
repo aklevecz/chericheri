@@ -1,12 +1,15 @@
 import React from "react";
 import MetaCube from "./MetaCube";
 import MetaLib from "./MetaLib";
+import Provider from "./Context";
 
 export default function () {
   return (
     <div>
-      <MetaLib />
-      <MetaCube />
+      <Provider>
+        <MetaLib />
+        <MetaCube />
+      </Provider>
     </div>
   );
 }

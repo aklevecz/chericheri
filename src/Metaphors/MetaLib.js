@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import { MetaContext } from "./Context";
 
 const Container = styled.div`
   color: white;
@@ -86,10 +87,15 @@ const Button = styled.button`
 const verbs = ["is", "feels", "smells", "tastes", "tingles"];
 
 export default function () {
+  const addMetaphor = useContext(MetaContext).addMetaphor;
   const [verb, setVerb] = useState(undefined);
+  const [metaphor, setMetaphor] = useState("");
   const inputRef = useRef();
-  const selectVerb = (e) => setVerb(e.target.id);
 
+  const selectVerb = (e) => setVerb(e.target.id);
+  const handleChange = (e) =>
+    setMetaphor(`cheri cheri ${verb} like ${e.target.value}`);
+  const handleAdd = () => addMetaphor(metaphor);
   useEffect(() => {
     if (verb) {
       inputRef.current.focus();
@@ -115,9 +121,14 @@ export default function () {
         </Verbs>
         <Inputs className={verb ? "shown" : "hidden"}>
           <Like>like</Like>
-          <Input ref={inputRef} name="metaphor" id="metaphor"></Input>
+          <Input
+            ref={inputRef}
+            onChange={handleChange}
+            name="metaphor"
+            id="metaphor"
+          ></Input>
           <div>
-            <Button>add</Button>
+            <Button onClick={handleAdd}>add</Button>
           </div>
         </Inputs>
       </Wrapper>

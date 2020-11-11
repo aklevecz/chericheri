@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
+import { MetaContext } from "./Context";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -73,18 +74,18 @@ const CubeFace = styled.div`
   }
 `;
 
-const metaphors = [
-  "cheri cheri feels like my pussy is purring",
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-];
+// const metaphors = [
+//   "cheri cheri feels like my pussy is purring",
+//   "1",
+//   "2",
+//   "3",
+//   "4",
+//   "5",
+// ];
 
-for (let i = 6; i < 100; i++) {
-  metaphors.push(`${i}`);
-}
+// for (let i = 6; i < 100; i++) {
+//   metaphors.push(`${i}`);
+// }
 
 const rotations = [
   "show-back",
@@ -105,6 +106,8 @@ const cubeFaceClasses = [
 ];
 
 export default function () {
+  const metaphors = useContext(MetaContext).metaphors;
+
   const [showFace, setShowFace] = useState(0);
   const changeMetaphor = () => {
     const nextFace = (showFace + 1) % metaphors.length;
