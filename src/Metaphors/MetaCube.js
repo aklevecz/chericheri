@@ -5,6 +5,7 @@ const Container = styled.div`
   background: black;
   color: white;
   text-align: center;
+  height: 420px;
   .wrapper {
     padding: 10%;
   }
@@ -51,6 +52,7 @@ const CubeFace = styled.div`
   height: 200px;
   padding-top: 50px;
   transition: color 1s;
+  font-size: 2rem;
   &.cube__face--front {
     transform: rotateY(0deg) translateZ(100px);
   }
