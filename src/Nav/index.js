@@ -40,7 +40,7 @@ const MenuButton = styled.div`
 `;
 
 export default function Nav() {
-  const [openNav, setOpenNav] = useState(true);
+  const [openNav, setOpenNav] = useState(false);
   const toggleOpenNav = () => setOpenNav(!openNav);
   return (
     <Container>
