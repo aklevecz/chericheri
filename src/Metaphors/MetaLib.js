@@ -8,6 +8,8 @@ const Container = styled.div`
   display: flex;
   padding: 40px;
   text-transform: capitalize;
+  height: 400px;
+  transition: opacity 1s, height 1s;
   form {
     margin: auto;
   }
@@ -85,25 +87,36 @@ const Button = styled.button`
 `;
 
 const verbs = ["is", "feels", "smells", "tastes", "tingles"];
-
+const SUBMITTED = "SUBMITTED";
 export default function () {
   const addMetaphor = useContext(MetaContext).addMetaphor;
   const [verb, setVerb] = useState(undefined);
   const [metaphor, setMetaphor] = useState("");
   const inputRef = useRef();
+  const containerRef = useRef();
 
   const selectVerb = (e) => setVerb(e.target.id);
-  const handleChange = (e) =>
-    setMetaphor(`cheri cheri ${verb} like ${e.target.value}`);
-  const handleAdd = () => addMetaphor(metaphor);
+  const handleChange = (e) => setMetaphor(e.target.value);
+
+  const handleAdd = () => {
+    addMetaphor(`cheri cheri ${verb} like ${metaphor}`);
+    setVerb(SUBMITTED);
+  };
+
   useEffect(() => {
+    if (verb === SUBMITTED) {
+      containerRef.current.style.opacity = 0;
+      containerRef.current.style.height = 0;
+      setTimeout(() => (containerRef.current.style.display = "none"), 1500);
+      return;
+    }
     if (verb) {
       inputRef.current.focus();
     }
-  }, [selectVerb]);
+  }, [verb]);
 
   return (
-    <Container>
+    <Container ref={containerRef}>
       {/* <form onClick={(e) => e.preventDefault()}> */}
       <Wrapper>
         <Heading>Add a metaphor</Heading>
