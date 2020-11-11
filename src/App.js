@@ -20,7 +20,6 @@ function App() {
       <Nav />
       {/* <Row src={cheri} /> */}
       {/* <Row src={jar} /> */}
-      <div>hi</div>
       <div
         style={{ height: "100%", overflow: "hidden", marginBottom: "-10px" }}
       >
