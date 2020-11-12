@@ -43,9 +43,9 @@ const LinkGroup = styled.div`
 
 const TextMe = () => (
   <div style={{ margin: 20 }}>
-    <div>TEXT "🍒" IF YOU NEED</div>
-    <div>ANYTHING</div>
-    <div>+1 (408) 799-6629</div>
+    <div>TEXT 🍒</div>
+    <div>TO</div>
+    <div>+1 (386) 968-2989</div>
   </div>
 );
 

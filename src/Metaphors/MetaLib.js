@@ -7,7 +7,7 @@ const Container = styled.div`
   background: black;
   display: flex;
   padding: 40px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   height: 530px;
   transition: opacity 1s, height 1s;
   form {
@@ -23,6 +23,7 @@ const Wrapper = styled.div`
 const Heading = styled.div`
   font-size: 2rem;
   padding-bottom: 10px;
+  text-transform: capitalize;
 `;
 
 const Verbs = styled.div`
@@ -74,7 +75,7 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   background: black;
   border: white solid;
   color: white;
@@ -119,7 +120,7 @@ export default function () {
     <Container ref={containerRef}>
       {/* <form onClick={(e) => e.preventDefault()}> */}
       <Wrapper>
-        <Heading>Add a metaphor</Heading>
+        <Heading>cheri cheri</Heading>
         <Verbs>
           {verbs.map((verbOption) => (
             <div
