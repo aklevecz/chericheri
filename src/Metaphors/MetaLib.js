@@ -8,7 +8,7 @@ const Container = styled.div`
   display: flex;
   padding: 40px;
   text-transform: capitalize;
-  height: 400px;
+  height: 530px;
   transition: opacity 1s, height 1s;
   form {
     margin: auto;
@@ -110,9 +110,9 @@ export default function () {
       setTimeout(() => (containerRef.current.style.display = "none"), 1500);
       return;
     }
-    if (verb) {
-      inputRef.current.focus();
-    }
+    // if (verb) {
+    //   inputRef.current.focus();
+    // }
   }, [verb]);
 
   return (
