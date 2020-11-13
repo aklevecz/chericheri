@@ -1,8 +1,12 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Button from ".";
 
 export default function ({ inverted = false }) {
-  const handleClick = () => alert("GET SOME");
+  const history = useHistory();
+
+  const handleClick = () => history.push("/product");
+
   const color = inverted ? "black" : "white";
   const background = inverted ? "white" : "black";
   return (

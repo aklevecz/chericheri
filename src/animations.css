@@ -1,8 +1,8 @@
 @keyframes filterAnimation {
   from {
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg) contrast(1.12);
   }
   to {
-    filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg) contrast(1.12);
   }
 }

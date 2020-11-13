@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
+import GetSome from "../Bits/Buttons/GetSome";
 import Cart from "../Bits/Icons/Cart";
 import Menu from "./Menu";
 
@@ -7,9 +9,9 @@ const Container = styled.div``;
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  width: 74%;
+  /* width: 74%; */
   margin: auto;
   height: 80px;
   z-index: 0;
@@ -41,7 +43,9 @@ const MenuButton = styled.div`
 
 export default function Nav() {
   const [openNav, setOpenNav] = useState(false);
+  const location = useLocation();
   const toggleOpenNav = () => setOpenNav(!openNav);
+  console.log(location.pathname);
   return (
     <Container>
       <Menu openNav={openNav} />
@@ -49,7 +53,7 @@ export default function Nav() {
         {!openNav ? "MENU" : "CLOSE"}
       </MenuButton>
       <Wrapper>
-        <div
+        {/* <div
           style={{
             fontWeight: 800,
             color: openNav ? "white" : "black",
@@ -59,8 +63,11 @@ export default function Nav() {
           }}
         >
           CHERI CHERI
+        </div> */}
+        <div style={{ display: "flex" }}>
+          {location.pathname !== "/product" && <GetSome />}
+          <Cart fill={openNav ? "white" : "black"} />
         </div>
-        <Cart fill={openNav ? "white" : "black"} />
       </Wrapper>
     </Container>
   );

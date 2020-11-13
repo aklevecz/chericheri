@@ -43,8 +43,8 @@ const LinkGroup = styled.div`
 
 const TextMe = () => (
   <div style={{ margin: 20 }}>
-    <div>TEXT 🍒</div>
-    <div>TO</div>
+    <div>TEXT "🍒" TO</div>
+    {/* <div>TO</div> */}
     <div>+1 (386) 968-2989</div>
   </div>
 );
