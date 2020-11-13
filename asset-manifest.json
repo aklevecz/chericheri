@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/chericheri/static/css/main.421368e8.chunk.css",
-    "main.js": "/chericheri/static/js/main.690bc6d0.chunk.js",
-    "main.js.map": "/chericheri/static/js/main.690bc6d0.chunk.js.map",
+    "main.css": "/chericheri/static/css/main.68cbfdfb.chunk.css",
+    "main.js": "/chericheri/static/js/main.b651bd16.chunk.js",
+    "main.js.map": "/chericheri/static/js/main.b651bd16.chunk.js.map",
     "runtime-main.js": "/chericheri/static/js/runtime-main.de21bcd1.js",
     "runtime-main.js.map": "/chericheri/static/js/runtime-main.de21bcd1.js.map",
-    "static/js/2.c7db22a5.chunk.js": "/chericheri/static/js/2.c7db22a5.chunk.js",
-    "static/js/2.c7db22a5.chunk.js.map": "/chericheri/static/js/2.c7db22a5.chunk.js.map",
+    "static/js/2.3ea8a655.chunk.js": "/chericheri/static/js/2.3ea8a655.chunk.js",
+    "static/js/2.3ea8a655.chunk.js.map": "/chericheri/static/js/2.3ea8a655.chunk.js.map",
     "index.html": "/chericheri/index.html",
-    "precache-manifest.7891967e06911f3b27a35feec4eb1e65.js": "/chericheri/precache-manifest.7891967e06911f3b27a35feec4eb1e65.js",
+    "precache-manifest.9cfcb712495a06707838793d74e5f5af.js": "/chericheri/precache-manifest.9cfcb712495a06707838793d74e5f5af.js",
     "service-worker.js": "/chericheri/service-worker.js",
-    "static/css/main.421368e8.chunk.css.map": "/chericheri/static/css/main.421368e8.chunk.css.map",
-    "static/js/2.c7db22a5.chunk.js.LICENSE.txt": "/chericheri/static/js/2.c7db22a5.chunk.js.LICENSE.txt",
+    "static/css/main.68cbfdfb.chunk.css.map": "/chericheri/static/css/main.68cbfdfb.chunk.css.map",
+    "static/js/2.3ea8a655.chunk.js.LICENSE.txt": "/chericheri/static/js/2.3ea8a655.chunk.js.LICENSE.txt",
     "static/media/black.mp4": "/chericheri/static/media/black.d7048d2b.mp4",
     "static/media/cart.svg": "/chericheri/static/media/cart.16feb2c3.svg",
-    "static/media/swirl1.svg": "/chericheri/static/media/swirl1.902be1f2.svg",
-    "static/media/swirl2.svg": "/chericheri/static/media/swirl2.1d6864ac.svg"
+    "static/media/white_box.png": "/chericheri/static/media/white_box.c6afaf0f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.de21bcd1.js",
-    "static/js/2.c7db22a5.chunk.js",
-    "static/css/main.421368e8.chunk.css",
-    "static/js/main.690bc6d0.chunk.js"
+    "static/js/2.3ea8a655.chunk.js",
+    "static/css/main.68cbfdfb.chunk.css",
+    "static/js/main.b651bd16.chunk.js"
   ]
 }
