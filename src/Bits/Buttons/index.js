@@ -13,6 +13,9 @@ const Button = styled.button`
   font-weight: 300;
   font-size: 18px;
   text-align: center;
+  margin: inherit;
+  display: block;
+  cursor: pointer;
 `;
 
 export default function ({

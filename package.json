@@ -13,7 +13,8 @@
     "react-inlinesvg": "^2.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "three": "^0.122.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build && yarn copy",
-    "copy":"copy public\\index.html build\\404.html",
+    "copy": "copy public\\index.html build\\404.html",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

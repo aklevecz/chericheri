@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   color: white;
   transition: color 3.5s, fill 0.5s;
   z-index: 2;
-  margin: 12px 62px 0px;
+  margin: 0px 23px 0px;
 `;
 
 const MenuButton = styled.div`
@@ -41,11 +41,10 @@ const MenuButton = styled.div`
   z-index: 2;
 `;
 
-export default function Nav() {
+export default function Nav({ device }) {
   const [openNav, setOpenNav] = useState(false);
   const location = useLocation();
   const toggleOpenNav = () => setOpenNav(!openNav);
-  console.log(location.pathname);
   return (
     <Container>
       <Menu openNav={openNav} />
@@ -65,7 +64,7 @@ export default function Nav() {
           CHERI CHERI
         </div> */}
         <div style={{ display: "flex" }}>
-          {location.pathname !== "/product" && <GetSome />}
+          {location.pathname !== "/product" && !device.isMobile && <GetSome />}
           <Cart fill={openNav ? "white" : "black"} />
         </div>
       </Wrapper>
