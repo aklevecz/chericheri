@@ -12,14 +12,13 @@ export default function MetaLibConfirm() {
   const no = () => setAffirmation(false);
 
   useEffect(() => {
+    if (!popContext.open) return;
     if (affirmation) {
       popContext.callback.metalib();
       welcomeRef.current.style.opacity = 0;
       popContext.close();
-      setAffirmation(undefined);
     } else if (affirmation === false) {
       popContext.close();
-      setAffirmation(undefined);
     }
   }, [affirmation, popContext]);
 
