@@ -2,7 +2,7 @@ import React, { useEffect, useContext, useState, useRef } from "react";
 import { PopupContext } from "./";
 import { Button, ButtonContainer, Container, Wrapper } from "./styles";
 
-export default function Over21() {
+export default function MetaLibConfirm() {
   const [affirmation, setAffirmation] = useState(undefined);
   const popContext = useContext(PopupContext);
 
@@ -13,11 +13,11 @@ export default function Over21() {
 
   useEffect(() => {
     if (affirmation) {
+      popContext.callback.metalib();
       welcomeRef.current.style.opacity = 0;
-      document.querySelector("video").play();
-      setTimeout(() => popContext.close(), 1000);
+      popContext.close();
     } else if (affirmation === false) {
-      setTimeout(() => (window.location.href = "https://disney.com"), 1000);
+      popContext.close();
     }
   }, [affirmation, popContext]);
 
@@ -25,21 +25,21 @@ export default function Over21() {
     <Container>
       {affirmation === undefined && (
         <>
-          <Wrapper>Are you over 21?</Wrapper>
+          <Wrapper>{popContext.content.metalib}</Wrapper>
           <ButtonContainer>
-            <Button onClick={yes}>Yes</Button>
-            <Button onClick={no}>No</Button>
+            <Button onClick={yes}>Send it</Button>
+            <Button onClick={no}>Wait no!</Button>
           </ButtonContainer>
         </>
       )}
       {affirmation === true && (
         <>
-          <Wrapper ref={welcomeRef}>Welcome!</Wrapper>
+          <Wrapper ref={welcomeRef}>Sent!</Wrapper>
         </>
       )}
       {affirmation === false && (
         <>
-          <Wrapper>Sorry, this site is too sexy for you</Wrapper>
+          <Wrapper>Okay!</Wrapper>
         </>
       )}
     </Container>

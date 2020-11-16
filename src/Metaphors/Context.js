@@ -21,7 +21,7 @@ for (let i = 6; i < 100; i++) {
 export default function ({ children }) {
   const [metaphors, setMetaphors] = useState([]);
   const addMetaphor = (metaphor) => {
-    console.log(metaphors, metaphor);
+    return console.log(metaphors, metaphor);
     const duplicate = metaphors.find((m) => m === metaphor);
     if (duplicate) return alert("already there");
     sendMetaphor(metaphor).then(updateMetaphors);

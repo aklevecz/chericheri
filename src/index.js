@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import "./index.css";
 import "./animations.css";
+import PopupProvider from "./Popup";
 
 export const DeviceContext = createContext(undefined);
 
@@ -33,7 +34,9 @@ const DeviceProvider = ({ children }) => {
 ReactDOM.render(
   <React.StrictMode>
     <DeviceProvider>
-      <App />
+      <PopupProvider>
+        <App />
+      </PopupProvider>
     </DeviceProvider>
   </React.StrictMode>,
   document.getElementById("root")

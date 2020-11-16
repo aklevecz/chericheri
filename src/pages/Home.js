@@ -2,9 +2,12 @@ import React, { useContext, useEffect, useRef } from "react";
 import { DeviceContext } from "..";
 import GetSome from "../Bits/Buttons/GetSome";
 import Metaphors from "../Metaphors";
+import { Popup, PopupContext } from "../Popup";
+import Over21 from "../Popup/Over21";
 
 export default function () {
   const device = useContext(DeviceContext);
+  const popup = useContext(PopupContext);
   const videoRef = useRef();
   useEffect(() => {
     videoRef.current.onclick = () => {
@@ -47,9 +50,6 @@ export default function () {
           mixBlendMode: "difference",
         }}
       ></div> */}
-      {/* <Popup>
-        <Over21 />
-      </Popup> */}
     </div>
   );
 }

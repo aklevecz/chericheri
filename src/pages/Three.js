@@ -4,29 +4,39 @@ import front from "../assets/thc_oil_box_front.png";
 import back from "../assets/thc_oil_box_back.png";
 import side from "../assets/thc_oil_box_side.png";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import object from "../assets/model.json";
+import { LinearFilter } from "three";
 // import * as OrbitControls from "../../node_modules/three/examples/jsm/controls/OrbitControls";
 export default function () {
   useEffect(() => {
+    // const height = window.innerHeight;
+    // const width = window.innerWidth;
+    const height = 400;
+    const width = window.innerWidth;
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0xffffff);
-    const camera = new THREE.PerspectiveCamera(75, 400 / 400, 0.1, 1000);
+    // scene.background = new THREE.Color(0xffffff);
+    const camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 100);
     const renderer = new THREE.WebGLRenderer({
       antialias: false,
       preserveDrawingBuffer: true,
       canvas: document.getElementById("canvas"),
     });
-    renderer.setSize(400, 400);
+    renderer.setSize(width, height);
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
     document.body.appendChild(renderer.domElement);
     const controls = new OrbitControls(camera, renderer.domElement);
-    const boxWidth = 1;
-    const boxHeight = 1;
-    const boxDepth = 1;
+    const boxWidth = 2.5;
+    const boxHeight = 5.5;
+    const boxDepth = 2;
     const geometry = new THREE.BoxBufferGeometry(boxWidth, boxHeight, boxDepth);
     const loader = new THREE.TextureLoader();
     const frontTexture = loader.load(front);
-    frontTexture.minFilter = THREE.LinearFilter;
+    // frontTexture.minFilter = LinearFilter;
+    frontTexture.needsUpdate = true;
+    // frontTexture.anisotropy = 16;
+    // frontTexture.magFilter = LinearFilter;
+    // frontTexture.premultiplyAlpha = false;
 
     const assetsPath = "../assets";
     const materials = [
@@ -44,7 +54,7 @@ export default function () {
         // map: loader.load(front),
         color: "white",
       }),
-      new THREE.MeshStandardMaterial({
+      new THREE.MeshBasicMaterial({
         map: frontTexture,
         color: "white",
       }),
@@ -52,8 +62,11 @@ export default function () {
         map: loader.load(back),
       }),
     ];
+    const m = materials[4];
+    // m.depthWrite = false;
+    // m.depthTest = false;
     const mesh = new THREE.Mesh(geometry, materials);
-    mesh.scale.set(2.5, 5.5, 2);
+    // mesh.scale.set(2.5, 5.5, 2);
     mesh.castShadow = true;
     mesh.receiveShadow = true;
     camera.position.z = 10;
@@ -61,7 +74,7 @@ export default function () {
     camera.lookAt(new THREE.Vector3(0, 0, 0));
     scene.add(mesh);
 
-    const floorGeometry = new THREE.PlaneGeometry(20, 20, 5);
+    const floorGeometry = new THREE.PlaneGeometry(100, 100, 5);
     const floorMaterial = new THREE.MeshStandardMaterial({ color: "white" });
     const floor = new THREE.Mesh(floorGeometry, floorMaterial);
     floor.receiveShadow = true;
@@ -85,6 +98,12 @@ export default function () {
     const ambientLight = new THREE.AmbientLight(0x404040); // soft white light
     ambientLight.intensity = 1.5;
     scene.add(ambientLight);
+
+    // const oloader = new THREE.ObjectLoader();
+
+    // const o = oloader.parse(object);
+    // o.position.y = -2;
+    // scene.add(o);
 
     function animate() {
       requestAnimationFrame(animate);

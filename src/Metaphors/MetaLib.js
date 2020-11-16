@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import Popup, { PopupContext } from "../Popup";
 import { MetaContext } from "./Context";
 
 const Container = styled.div`
@@ -91,6 +92,7 @@ const verbs = ["is", "feels", "smells", "tastes", "tingles"];
 const SUBMITTED = "SUBMITTED";
 export default function () {
   const addMetaphor = useContext(MetaContext).addMetaphor;
+  const popup = useContext(PopupContext);
   const [verb, setVerb] = useState(undefined);
   const [metaphor, setMetaphor] = useState("");
   const inputRef = useRef();
@@ -100,8 +102,15 @@ export default function () {
   const handleChange = (e) => setMetaphor(e.target.value);
 
   const handleAdd = () => {
-    addMetaphor(`cheri cheri ${verb} like ${metaphor}`);
-    setVerb(SUBMITTED);
+    const metalib = `cheri cheri ${verb} like ${metaphor}`;
+    popup.setContent({ metalib });
+    popup.setCallback({
+      metalib: () => {
+        addMetaphor(metalib);
+        setVerb(SUBMITTED);
+      },
+    });
+    return popup.openPopup("metalib-confirm");
   };
 
   useEffect(() => {
@@ -111,42 +120,45 @@ export default function () {
       setTimeout(() => (containerRef.current.style.display = "none"), 1500);
       return;
     }
-    // if (verb) {
-    //   inputRef.current.focus();
-    // }
+    if (verb) {
+      inputRef.current.focus();
+    }
   }, [verb]);
 
   return (
-    <Container ref={containerRef}>
-      {/* <form onClick={(e) => e.preventDefault()}> */}
-      <Wrapper>
-        <Heading>cheri cheri</Heading>
-        <Verbs>
-          {verbs.map((verbOption) => (
-            <div
-              key={verbOption}
-              id={verbOption}
-              onClick={selectVerb}
-              style={{ background: verb === verbOption ? "red" : "black" }}
-            >
-              {verbOption}
+    <>
+      <Container ref={containerRef}>
+        <Wrapper>
+          <Heading>cheri cheri</Heading>
+          <Verbs>
+            {verbs.map((verbOption) => (
+              <div
+                key={verbOption}
+                id={verbOption}
+                onClick={selectVerb}
+                style={{ background: verb === verbOption ? "red" : "black" }}
+              >
+                {verbOption}
+              </div>
+            ))}
+          </Verbs>
+          <Inputs className={verb ? "shown" : "hidden"}>
+            <Like>like</Like>
+            <Input
+              ref={inputRef}
+              onChange={handleChange}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleAdd();
+              }}
+              name="metaphor"
+              id="metaphor"
+            ></Input>
+            <div>
+              <Button onClick={handleAdd}>add</Button>
             </div>
-          ))}
-        </Verbs>
-        <Inputs className={verb ? "shown" : "hidden"}>
-          <Like>like</Like>
-          <Input
-            ref={inputRef}
-            onChange={handleChange}
-            name="metaphor"
-            id="metaphor"
-          ></Input>
-          <div>
-            <Button onClick={handleAdd}>add</Button>
-          </div>
-        </Inputs>
-      </Wrapper>
-      {/* </form> */}
-    </Container>
+          </Inputs>
+        </Wrapper>
+      </Container>
+    </>
   );
 }
