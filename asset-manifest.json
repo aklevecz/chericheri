@@ -1,30 +1,30 @@
 {
   "files": {
     "main.css": "/chericheri/static/css/main.db99252e.chunk.css",
-    "main.js": "/chericheri/static/js/main.1fb7eb4e.chunk.js",
-    "main.js.map": "/chericheri/static/js/main.1fb7eb4e.chunk.js.map",
+    "main.js": "/chericheri/static/js/main.4b1be9c1.chunk.js",
+    "main.js.map": "/chericheri/static/js/main.4b1be9c1.chunk.js.map",
     "runtime-main.js": "/chericheri/static/js/runtime-main.de21bcd1.js",
     "runtime-main.js.map": "/chericheri/static/js/runtime-main.de21bcd1.js.map",
     "static/js/2.3b5caf97.chunk.js": "/chericheri/static/js/2.3b5caf97.chunk.js",
     "static/js/2.3b5caf97.chunk.js.map": "/chericheri/static/js/2.3b5caf97.chunk.js.map",
     "index.html": "/chericheri/index.html",
-    "precache-manifest.84513cb6391987aa005bb6c0518c31a1.js": "/chericheri/precache-manifest.84513cb6391987aa005bb6c0518c31a1.js",
+    "precache-manifest.4401c363e6b6716d24c62daceaa61836.js": "/chericheri/precache-manifest.4401c363e6b6716d24c62daceaa61836.js",
     "service-worker.js": "/chericheri/service-worker.js",
     "static/css/main.db99252e.chunk.css.map": "/chericheri/static/css/main.db99252e.chunk.css.map",
     "static/js/2.3b5caf97.chunk.js.LICENSE.txt": "/chericheri/static/js/2.3b5caf97.chunk.js.LICENSE.txt",
     "static/media/black.mp4": "/chericheri/static/media/black.d7048d2b.mp4",
     "static/media/cart.svg": "/chericheri/static/media/cart.26937366.svg",
     "static/media/fallingcherries.svg": "/chericheri/static/media/fallingcherries.e68eeab9.svg",
+    "static/media/poolangles.svg": "/chericheri/static/media/poolangles.8ddf20f6.svg",
     "static/media/thc_oil_box_back.png": "/chericheri/static/media/thc_oil_box_back.54980efa.png",
     "static/media/thc_oil_box_front.png": "/chericheri/static/media/thc_oil_box_front.0c151770.png",
     "static/media/thc_oil_box_side.png": "/chericheri/static/media/thc_oil_box_side.14719b19.png",
-    "static/media/triangles.svg": "/chericheri/static/media/triangles.c8d58687.svg",
     "static/media/white_box.png": "/chericheri/static/media/white_box.c6afaf0f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.de21bcd1.js",
     "static/js/2.3b5caf97.chunk.js",
     "static/css/main.db99252e.chunk.css",
-    "static/js/main.1fb7eb4e.chunk.js"
+    "static/js/main.4b1be9c1.chunk.js"
   ]
 }
