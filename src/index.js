@@ -4,14 +4,13 @@ import App from "./App";
 import "./index.css";
 import "./animations.css";
 import PopupProvider from "./Popup";
-
+import LoadingProvder from "./Bits/Loading/Context";
 export const DeviceContext = createContext(undefined);
 
 const DeviceProvider = ({ children }) => {
   const [isMobile, setIsMobile] = useState(undefined);
 
   const updateSize = () => {
-    console.log("resize");
     if (window.innerWidth > window.innerHeight) {
       setIsMobile(false);
     } else {
@@ -35,7 +34,9 @@ ReactDOM.render(
   <React.StrictMode>
     <DeviceProvider>
       <PopupProvider>
-        <App />
+        <LoadingProvder>
+          <App />
+        </LoadingProvder>
       </PopupProvider>
     </DeviceProvider>
   </React.StrictMode>,

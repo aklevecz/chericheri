@@ -7,8 +7,8 @@ export default function () {
   return (
     <div>
       <Provider>
-        <MetaLib />
         <MetaCube />
+        <MetaLib />
       </Provider>
     </div>
   );

@@ -18,3 +18,7 @@ textarea:focus,
 input:focus {
   outline: none;
 }
+
+#page-root {
+  transition: transform 1s;
+}

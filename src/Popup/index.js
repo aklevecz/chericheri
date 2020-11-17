@@ -32,13 +32,16 @@ export default function ({ children }) {
     setPop(type);
     setOpen(true);
   };
+
   const clear = () => {
     setOpen(false);
     setPop(undefined);
   };
+
   const close = () => {
     setTimeout(clear, 1000);
   };
+
   return (
     <PopupContext.Provider
       value={{

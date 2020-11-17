@@ -6,7 +6,9 @@ const Container = styled.div`
   background: black;
   color: white;
   text-align: center;
-  height: 420px;
+  height: 300px;
+  display: flex;
+
   .wrapper {
     padding: 10%;
   }
@@ -51,7 +53,7 @@ const CubeFace = styled.div`
   position: absolute;
   width: 200px;
   height: 200px;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   transition: color 1s;
   font-size: 2rem;
   &.cube__face--front {
@@ -107,7 +109,6 @@ const cubeFaceClasses = [
 
 export default function () {
   const metaphors = useContext(MetaContext).metaphors;
-
   const [showFace, setShowFace] = useState(0);
   const changeMetaphor = () => {
     const nextFace = (showFace + 1) % metaphors.length;
@@ -120,7 +121,7 @@ export default function () {
   return (
     <Container>
       <Scene onClick={changeMetaphor}>
-        <Cube className={cubeClass}>
+        <Cube id="cube" className={cubeClass}>
           {metaSlice.map((metaphor, i) => {
             return (
               <CubeFace
