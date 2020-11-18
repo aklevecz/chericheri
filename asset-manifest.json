@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/chericheri/static/css/main.aa03db1d.chunk.css",
-    "main.js": "/chericheri/static/js/main.f7f2a663.chunk.js",
-    "main.js.map": "/chericheri/static/js/main.f7f2a663.chunk.js.map",
+    "main.css": "/chericheri/static/css/main.39088b6e.chunk.css",
+    "main.js": "/chericheri/static/js/main.c4801083.chunk.js",
+    "main.js.map": "/chericheri/static/js/main.c4801083.chunk.js.map",
     "runtime-main.js": "/chericheri/static/js/runtime-main.de21bcd1.js",
     "runtime-main.js.map": "/chericheri/static/js/runtime-main.de21bcd1.js.map",
-    "static/js/2.3b5caf97.chunk.js": "/chericheri/static/js/2.3b5caf97.chunk.js",
-    "static/js/2.3b5caf97.chunk.js.map": "/chericheri/static/js/2.3b5caf97.chunk.js.map",
+    "static/js/2.0dfbefe9.chunk.js": "/chericheri/static/js/2.0dfbefe9.chunk.js",
+    "static/js/2.0dfbefe9.chunk.js.map": "/chericheri/static/js/2.0dfbefe9.chunk.js.map",
     "index.html": "/chericheri/index.html",
-    "precache-manifest.923e224e41a13bffb9ea4b92d51f020d.js": "/chericheri/precache-manifest.923e224e41a13bffb9ea4b92d51f020d.js",
+    "precache-manifest.e3de09dd3f5f949e9ff6b8529db42fe3.js": "/chericheri/precache-manifest.e3de09dd3f5f949e9ff6b8529db42fe3.js",
     "service-worker.js": "/chericheri/service-worker.js",
-    "static/css/main.aa03db1d.chunk.css.map": "/chericheri/static/css/main.aa03db1d.chunk.css.map",
-    "static/js/2.3b5caf97.chunk.js.LICENSE.txt": "/chericheri/static/js/2.3b5caf97.chunk.js.LICENSE.txt",
+    "static/css/main.39088b6e.chunk.css.map": "/chericheri/static/css/main.39088b6e.chunk.css.map",
+    "static/js/2.0dfbefe9.chunk.js.LICENSE.txt": "/chericheri/static/js/2.0dfbefe9.chunk.js.LICENSE.txt",
     "static/media/black.mp4": "/chericheri/static/media/black.d7048d2b.mp4",
     "static/media/cart.svg": "/chericheri/static/media/cart.26937366.svg",
     "static/media/fallingcherry.svg": "/chericheri/static/media/fallingcherry.c15e2e2e.svg",
-    "static/media/poolangles.svg": "/chericheri/static/media/poolangles.8ddf20f6.svg",
     "static/media/thc_oil_box_back.png": "/chericheri/static/media/thc_oil_box_back.54980efa.png",
     "static/media/thc_oil_box_front.png": "/chericheri/static/media/thc_oil_box_front.0c151770.png",
     "static/media/thc_oil_box_side.png": "/chericheri/static/media/thc_oil_box_side.14719b19.png",
+    "static/media/triangleswater.svg": "/chericheri/static/media/triangleswater.09a4ffc2.svg",
     "static/media/white_box.png": "/chericheri/static/media/white_box.c6afaf0f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.de21bcd1.js",
-    "static/js/2.3b5caf97.chunk.js",
-    "static/css/main.aa03db1d.chunk.css",
-    "static/js/main.f7f2a663.chunk.js"
+    "static/js/2.0dfbefe9.chunk.js",
+    "static/css/main.39088b6e.chunk.css",
+    "static/js/main.c4801083.chunk.js"
   ]
 }

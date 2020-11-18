@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5d595c99223817db79e7d179f333cddc",
+    "revision": "944f3bdccd3793bccb9c0d806239fb88",
     "url": "/chericheri/index.html"
   },
   {
-    "revision": "0d1a6389cf2b9089e202",
-    "url": "/chericheri/static/css/main.aa03db1d.chunk.css"
+    "revision": "ec98478a1880d9a45949",
+    "url": "/chericheri/static/css/main.39088b6e.chunk.css"
   },
   {
-    "revision": "f5cce99510e5b9b1f0fb",
-    "url": "/chericheri/static/js/2.3b5caf97.chunk.js"
+    "revision": "fc858001afa0a8197a61",
+    "url": "/chericheri/static/js/2.0dfbefe9.chunk.js"
   },
   {
     "revision": "1a1a42c150bd05496b97b265c552c789",
-    "url": "/chericheri/static/js/2.3b5caf97.chunk.js.LICENSE.txt"
+    "url": "/chericheri/static/js/2.0dfbefe9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0d1a6389cf2b9089e202",
-    "url": "/chericheri/static/js/main.f7f2a663.chunk.js"
+    "revision": "ec98478a1880d9a45949",
+    "url": "/chericheri/static/js/main.c4801083.chunk.js"
   },
   {
     "revision": "db92b0281da43e0b921d",
@@ -36,10 +36,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chericheri/static/media/fallingcherry.c15e2e2e.svg"
   },
   {
-    "revision": "8ddf20f62ef44d2de9dd5e38ab325cbd",
-    "url": "/chericheri/static/media/poolangles.8ddf20f6.svg"
-  },
-  {
     "revision": "54980efa8f1bad6cd39403ffc6c564eb",
     "url": "/chericheri/static/media/thc_oil_box_back.54980efa.png"
   },
@@ -50,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "14719b19120b24bb54c30c4d89145856",
     "url": "/chericheri/static/media/thc_oil_box_side.14719b19.png"
+  },
+  {
+    "revision": "09a4ffc20e3f61fad9c152feb0b3c5cc",
+    "url": "/chericheri/static/media/triangleswater.09a4ffc2.svg"
   },
   {
     "revision": "c6afaf0f02774d2b612a5daa7f768161",
