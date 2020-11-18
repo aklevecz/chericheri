@@ -5,7 +5,7 @@ export default function () {
   return (
     <div>
       <Svg
-        src={require("./trianglesplug.svg")}
+        src={require("./triangleswater.svg")}
         onLoad={() => {
           document.getElementById("water");
           // .setAttribute("transform", "translate(-20.03) scale(0.2 0.2)");

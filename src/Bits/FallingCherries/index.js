@@ -8,11 +8,11 @@ export default function () {
   };
 
   const startFading = () => {
-    console.log("starting fade");
     let i = 0;
     const loop = () => {
       if (i === 5) return;
       const cherry = document.getElementById(`cherry${i + 1}`);
+      if (!cherry) return;
       cherry.style.transition = "opacity 1s";
       cherry.style.opacity = 1;
       i = (i + 1) % 6;
