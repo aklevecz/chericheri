@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "37c65fef2fc384fd1a18ed0f0909df89",
+    "revision": "ad589eff245312715b57082aee1431d5",
     "url": "/chericheri/index.html"
   },
   {
-    "revision": "294a8f3bcc69fd782b18",
+    "revision": "dc3b3bdcac4142a2ddb4",
     "url": "/chericheri/static/css/main.39088b6e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chericheri/static/js/2.0dfbefe9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "294a8f3bcc69fd782b18",
-    "url": "/chericheri/static/js/main.4eef813d.chunk.js"
+    "revision": "dc3b3bdcac4142a2ddb4",
+    "url": "/chericheri/static/js/main.6dab709e.chunk.js"
   },
   {
     "revision": "db92b0281da43e0b921d",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chericheri/static/media/cart.26937366.svg"
   },
   {
-    "revision": "c15e2e2e1cd9f9e14e61dd954273002f",
-    "url": "/chericheri/static/media/fallingcherry.c15e2e2e.svg"
+    "revision": "b2c5d2bf93bd2da6ab5cd0177138c73f",
+    "url": "/chericheri/static/media/cherrypool.b2c5d2bf.svg"
   },
   {
     "revision": "54980efa8f1bad6cd39403ffc6c564eb",
