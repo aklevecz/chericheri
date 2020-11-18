@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1125 1088">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="tri16" d="M304.52,499.6,562.7.07l562.3,1088H.39Z" style="fill:none" />
+        </clipPath>
+    </defs>
+    <g id="artboard_1" data-name="artboard 1">
+        <g style="clip-path:url(#clip-path)">
+            <image id="water" width="7030" height="5298" transform="translate(-700.0) scale(0.4 0.4)"
+                xlink:href="http://localhost:3000/chericheri/water.gif" />
+        </g>
+        <path id="tri16-2" data-name="tri16" d="M304.52,499.6,562.7.07l562.3,1088H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri15" d="M294.28,494.17,562.7.07,1125,1035.15H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri14" d="M283.32,488.06,562.7.07,1125,982.25H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri13" d="M271.59,481.15,562.7.07,1125,929.35H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri12" d="M259,473.33,562.7.07,1125,876.45H.39Z" style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri11" d="M245.61,464.44,562.7.07,1125,823.55H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri10" d="M231.24,454.29,562.7.07,1125,770.64H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri9" d="M215.9,442.69,562.7.07,1125,717.74H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri8" d="M199.56,429.38,562.7.07,1125,664.84H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri7" d="M182.21,414.09,562.7.07,1125,611.94H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri6" d="M163.91,396.49,562.7.07,1125,559H.39Z" style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri5" d="M144.74,376.23,562.7.07,1125,506.14H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri4" d="M124.88,352.91,562.7.07,1125,453.24H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri3" d="M1020.79,326.16,562.7.07.39,400.34H1125Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri2" d="M84.32,295.59,562.7.07,1125,347.44H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+        <path id="tri1" d="M64.57,260.93,562.7.07,1125,294.54H.39Z"
+            style="fill:none;stroke:#000;stroke-miterlimit:10" />
+    </g>
+</svg>

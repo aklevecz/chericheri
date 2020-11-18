@@ -8,7 +8,6 @@ body {
   font-family: "Oswald", sans-serif;
   background: white;
 }
-
 video,
 img {
   animation: filterAnimation 20s infinite ease-in;
@@ -21,4 +20,14 @@ input:focus {
 
 #page-root {
   transition: transform 1s;
+}
+
+#cherry1,
+#cherry2,
+#cherry3,
+#cherry4,
+#cherry5,
+#cherry6,
+#cherry7 {
+  opacity: 0;
 }

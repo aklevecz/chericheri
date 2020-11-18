@@ -6,9 +6,9 @@ const Container = styled.div`
   background: black;
   color: white;
   text-align: center;
-  height: 300px;
+  height: 350px;
   display: flex;
-
+  margin: -1px;
   .wrapper {
     padding: 10%;
   }
@@ -53,7 +53,7 @@ const CubeFace = styled.div`
   position: absolute;
   width: 200px;
   height: 200px;
-  /* padding-top: 50px; */
+  padding-top: 20px;
   transition: color 1s;
   font-size: 2rem;
   &.cube__face--front {

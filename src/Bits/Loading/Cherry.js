@@ -41,7 +41,6 @@ export default function Cherry() {
     };
     animate();
   };
-  console.log(`${process.env.PUBLIC_URL}`);
   return (
     <Container ref={containerRef}>
       <Svg src={`${process.env.PUBLIC_URL}/cherry.svg`} onLoad={loaded} />
