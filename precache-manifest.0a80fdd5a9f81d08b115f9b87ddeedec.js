@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "944f3bdccd3793bccb9c0d806239fb88",
+    "revision": "37c65fef2fc384fd1a18ed0f0909df89",
     "url": "/chericheri/index.html"
   },
   {
-    "revision": "ec98478a1880d9a45949",
+    "revision": "294a8f3bcc69fd782b18",
     "url": "/chericheri/static/css/main.39088b6e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chericheri/static/js/2.0dfbefe9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ec98478a1880d9a45949",
-    "url": "/chericheri/static/js/main.c4801083.chunk.js"
+    "revision": "294a8f3bcc69fd782b18",
+    "url": "/chericheri/static/js/main.4eef813d.chunk.js"
   },
   {
     "revision": "db92b0281da43e0b921d",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chericheri/static/media/thc_oil_box_side.14719b19.png"
   },
   {
-    "revision": "09a4ffc20e3f61fad9c152feb0b3c5cc",
-    "url": "/chericheri/static/media/triangleswater.09a4ffc2.svg"
+    "revision": "f14bded54471e37e21bb9aba6491758d",
+    "url": "/chericheri/static/media/triangleswater.f14bded5.svg"
   },
   {
     "revision": "c6afaf0f02774d2b612a5daa7f768161",
