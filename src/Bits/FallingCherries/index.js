@@ -4,6 +4,9 @@ import Svg from "react-inlinesvg";
 export default function () {
   const [loaded, setLoaded] = useState(false);
   const load = () => {
+    document
+      .getElementById("water")
+      .setAttribute("transform", "translate(-30.08 510.66) scale(0.31)");
     setLoaded(true);
   };
 
@@ -32,7 +35,7 @@ export default function () {
       // onHide={() => console.log("hide")}
       // onShow={() => console.log("show")}
     >
-      <Svg src={require("./fallingcherry.svg")} onLoad={load} />
+      <Svg src={require("./cherrypool.svg")} onLoad={load} />
     </IntersectionVisible>
   );
 }

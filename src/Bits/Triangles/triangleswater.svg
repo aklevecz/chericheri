@@ -8,8 +8,8 @@
     <g id="artboard_2-2" data-name="artboard 2">
         <g id="pool">
             <g style="clip-path:url(#clip-path)">
-                <image id="water" width="4000" height="5298" transform="translate(-0.41 -200.02) scale(0.29)"
-                    xlink:href="http://localhost:3000/chericheri/water.gif" style="isolation:isolate" />
+                <image id="water" width="4000" height="5298" transform="translate(-31.41 -200.02) scale(0.3)"
+                    xlink:href="https://traysimay.github.io/chericheri/water.gif" style="isolation:isolate" />
             </g>
         </g>
         <g id="diamondkeys">

@@ -48,9 +48,6 @@ export default function Nav({ device }) {
   return (
     <Container>
       <Menu openNav={openNav} />
-      <MenuButton onClick={toggleOpenNav}>
-        {!openNav ? "MENU" : "CLOSE"}
-      </MenuButton>
       <Wrapper>
         {/* <div
           style={{
@@ -68,6 +65,11 @@ export default function Nav({ device }) {
           <Cart fill={openNav ? "white" : "black"} />
         </div>
       </Wrapper>
+      <MenuButton onClick={toggleOpenNav}>
+        <div onClick={toggleOpenNav} style={{ cursor: "pointer" }}>
+          {!openNav ? "MENU" : "CLOSE"}
+        </div>
+      </MenuButton>
     </Container>
   );
 }

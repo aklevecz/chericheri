@@ -9,22 +9,24 @@ import { LinearFilter } from "three";
 // import * as OrbitControls from "../../node_modules/three/examples/jsm/controls/OrbitControls";
 export default function () {
   useEffect(() => {
-    // const height = window.innerHeight;
-    // const width = window.innerWidth;
-    const height = 400;
+    const canvas = document.getElementById("canvas");
+    const height = window.innerWidth;
     const width = window.innerWidth;
+    // const height = 1080;
+    // const width = 1080;
     const scene = new THREE.Scene();
     // scene.background = new THREE.Color(0xffffff);
     const camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 100);
     const renderer = new THREE.WebGLRenderer({
-      antialias: false,
-      preserveDrawingBuffer: true,
-      canvas: document.getElementById("canvas"),
+      // antialias: false,
+      // preserveDrawingBuffer: true,
+      canvas,
     });
     renderer.setSize(width, height);
+    renderer.setPixelRatio(window.devicePixelRatio);
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
-    document.body.appendChild(renderer.domElement);
+    // document.body.appendChild(renderer.domElement);
     const controls = new OrbitControls(camera, renderer.domElement);
     const boxWidth = 2.5;
     const boxHeight = 5.5;

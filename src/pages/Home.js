@@ -52,7 +52,7 @@ export default function () {
             transition: "opacity 1s",
           }}
         />
-        <Cherry />
+        {loadingContext.loading && <Cherry />}
       </div>
       {device.isMobile && (
         <div style={{ display: "block", margin: "28px auto" }}>
@@ -66,7 +66,6 @@ export default function () {
       <Metaphors />
       <div>
         <FallingCherries />
-        <Triangles />
       </div>
       {/* <div
         style={{

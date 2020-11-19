@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import Svg from "react-inlinesvg";
+
+// DEPRECATED
+
 export default function () {
   useEffect(() => {}, []);
   return (
