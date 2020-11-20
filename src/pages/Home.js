@@ -71,11 +71,11 @@ export default function () {
         />
         {loadingContext.loading && <Cherry />}
       </div>
-      {device.isMobile && (
+      {/* {device.isMobile && (
         <div style={{ display: "block", margin: "28px auto" }}>
           <GetSome />
         </div>
-      )}
+      )} */}
       {/* <SwirlPane file="swirl1" />
       <div style={{ marginTop: -7 }}>
         <SwirlPane file="swirl2" />

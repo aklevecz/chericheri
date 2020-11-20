@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import GetSome from "../Bits/Buttons/GetSome";
@@ -45,9 +45,12 @@ export default function Nav({ device }) {
   const [openNav, setOpenNav] = useState(false);
   const location = useLocation();
   const toggleOpenNav = () => setOpenNav(!openNav);
+  useEffect(() => {
+    setOpenNav(false);
+  }, [location]);
   return (
     <Container>
-      <Menu openNav={openNav} />
+      <Menu openNav={openNav} setOpenNav={setOpenNav} />
       <Wrapper>
         {/* <div
           style={{
@@ -61,7 +64,7 @@ export default function Nav({ device }) {
           CHERI CHERI
         </div> */}
         <div style={{ display: "flex" }}>
-          {location.pathname !== "/product" && !device.isMobile && <GetSome />}
+          {/* {location.pathname !== "/product" && !device.isMobile && <GetSome />} */}
           <Cart fill={openNav ? "white" : "black"} />
         </div>
       </Wrapper>

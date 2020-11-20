@@ -38,7 +38,7 @@ function App() {
       {/* <animated.div key={key} style={props}> */}
       <Switch location={location}>
         <Route path="/" exact component={Home} />
-        <Route path="/product" component={Product} />
+        <Route path="/oil" component={Product} />
         {/* <Route path="/three" component={Three} /> */}
         <Route path="/fuck" render={() => <div>fuck</div>} />
       </Switch>
