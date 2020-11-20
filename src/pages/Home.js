@@ -24,16 +24,27 @@ export default function () {
     };
     videoRef.current.src = blackBoxVideo;
     videoRef.current.onloadeddata = () => loadingContext.endLoading();
+
+    setTimeout(
+      () =>
+        (document.getElementById("home").style.transform = "translateX(0%)"),
+      100
+    );
   }, []);
 
   return (
-    <div style={{ transition: "transform 1s" }}>
+    <div
+      id="home"
+      className="page-container"
+      style={{ transition: "transform 1s", transform: "translateX(100%)" }}
+    >
       {/* <Nav /> */}
       {/* <Row src={cheri} /> */}
       {/* <Row src={jar} /> */}
       <div
         style={{
-          height: window.innerWidth / aspect - 1,
+          height:
+            window.innerWidth > 500 ? 420 : window.innerWidth / aspect - 1,
           overflow: "hidden",
           position: "relative",
         }}

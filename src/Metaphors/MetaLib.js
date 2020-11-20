@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Popup, { PopupContext } from "../Popup";
 import { MetaContext } from "./Context";
+import IntersectionVisible from "react-intersection-visible";
 
 const Container = styled.div`
   color: white;
@@ -84,7 +85,7 @@ const Button = styled.button`
   margin-top: 24px;
   font-size: 1.6rem;
   cursor: pointer;
-  width: 100px;
+  width: 185px;
   height: 54px; ;
 `;
 
@@ -95,6 +96,7 @@ export default function () {
   const popup = useContext(PopupContext);
   const [verb, setVerb] = useState(undefined);
   const [metaphor, setMetaphor] = useState("");
+  const [showInput, setShowInput] = useState(false);
   const inputRef = useRef();
   const containerRef = useRef();
 
@@ -130,19 +132,21 @@ export default function () {
       <Container ref={containerRef}>
         <Wrapper>
           <Heading>cheri cheri</Heading>
-          <Verbs>
-            {verbs.map((verbOption) => (
-              <div
-                key={verbOption}
-                id={verbOption}
-                onClick={selectVerb}
-                style={{ background: verb === verbOption ? "red" : "black" }}
-              >
-                {verbOption}
-              </div>
-            ))}
-          </Verbs>
-          <Inputs className={verb ? "shown" : "hidden"}>
+          <IntersectionVisible onShow={() => setShowInput(true)}>
+            <Verbs>
+              {verbs.map((verbOption) => (
+                <div
+                  key={verbOption}
+                  id={verbOption}
+                  onClick={selectVerb}
+                  style={{ background: verb === verbOption ? "red" : "black" }}
+                >
+                  {verbOption}
+                </div>
+              ))}
+            </Verbs>
+          </IntersectionVisible>
+          <Inputs className={verb || showInput ? "shown" : "hidden"}>
             <Like>like</Like>
             <Input
               ref={inputRef}
@@ -154,7 +158,7 @@ export default function () {
               id="metaphor"
             ></Input>
             <div>
-              <Button onClick={handleAdd}>add</Button>
+              <Button onClick={handleAdd}>add metaphor</Button>
             </div>
           </Inputs>
         </Wrapper>

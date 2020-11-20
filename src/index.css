@@ -10,7 +10,15 @@ body {
 }
 video,
 img {
-  animation: filterAnimation 20s infinite ease-in;
+  animation: filterAnimation 10s infinite alternate ease-in;
+  width: 100%;
+  filter: contrast(1.2);
+  margin-bottom: -10px;
+  opacity: 1;
+  max-width: 550px;
+  transition: opacity 1s ease 0s;
+  display: block;
+  margin: auto;
 }
 
 textarea:focus,

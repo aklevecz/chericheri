@@ -12,10 +12,11 @@ export default function () {
     const canvas = document.getElementById("canvas");
     const height = window.innerWidth;
     const width = window.innerWidth;
+    // console.log(width)
     // const height = 1080;
     // const width = 1080;
     const scene = new THREE.Scene();
-    // scene.background = new THREE.Color(0xffffff);
+    scene.background = new THREE.Color(0xffffff);
     const camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 100);
     const renderer = new THREE.WebGLRenderer({
       // antialias: false,
@@ -28,6 +29,9 @@ export default function () {
     renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
     // document.body.appendChild(renderer.domElement);
     const controls = new OrbitControls(camera, renderer.domElement);
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 2.5;
+    controls.maxPolarAngle = Math.PI / 2;
     const boxWidth = 2.5;
     const boxHeight = 5.5;
     const boxDepth = 2;
@@ -71,23 +75,25 @@ export default function () {
     // mesh.scale.set(2.5, 5.5, 2);
     mesh.castShadow = true;
     mesh.receiveShadow = true;
-    camera.position.z = 10;
+    camera.position.z = 11;
     camera.position.y = 5;
     camera.lookAt(new THREE.Vector3(0, 0, 0));
     scene.add(mesh);
 
     const floorGeometry = new THREE.PlaneGeometry(100, 100, 5);
+    floorGeometry.rotateX(-Math.PI * 0.5); // this is how you can do it
+
     const floorMaterial = new THREE.MeshStandardMaterial({ color: "white" });
     const floor = new THREE.Mesh(floorGeometry, floorMaterial);
     floor.receiveShadow = true;
-    floor.position.z = -4;
-    floor.rotation.x = -1.6;
-    floor.position.y = -3;
+    // floor.position.z = -4;
+    // floor.rotation.x = -1.6;
+    floor.position.y = -2.7;
     scene.add(floor);
     const color = 0xffffff;
-    const intensity = 1;
+    const intensity = 0.9;
     const light = new THREE.DirectionalLight(color, intensity);
-    light.position.set(5, 3, 8);
+    light.position.set(5, 8, 8);
     light.target.position.set(0, 0, 0);
     light.castShadow = true;
     //Set up shadow properties for the light
@@ -106,11 +112,15 @@ export default function () {
     // const o = oloader.parse(object);
     // o.position.y = -2;
     // scene.add(o);
-
+    document.addEventListener("pointerup", myOnMouseDownFunction, false);
+    function myOnMouseDownFunction(evt) {
+      evt.preventDefault();
+      // return alert("wat");
+    }
     function animate() {
       requestAnimationFrame(animate);
       //   cube.rotation.y += 0.01;
-
+      controls.update();
       renderer.render(scene, camera);
     }
     animate();

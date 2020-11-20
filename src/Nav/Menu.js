@@ -50,12 +50,12 @@ const TextMe = () => (
 );
 
 export default function Menu({ openNav }) {
-  const a = window.innerWidth;
+  const a = window.innerWidth + 100;
   const b = window.innerHeight;
   const c = Math.sqrt(a * a + b * b);
   const mobileAspect = window.innerHeight > window.innerWidth;
   const side = openNav ? 0 : -c;
-  const m = mobileAspect ? 0 : 0.5;
+  const m = mobileAspect ? 0.0 : 0.5;
   return (
     <>
       <Background
