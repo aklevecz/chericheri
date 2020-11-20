@@ -86,7 +86,8 @@ const Button = styled.button`
   font-size: 1.6rem;
   cursor: pointer;
   width: 185px;
-  height: 54px; ;
+  height: 54px;
+  font-family: Oswald;
 `;
 
 const verbs = ["is", "feels", "smells", "tastes", "tingles"];

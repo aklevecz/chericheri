@@ -9,13 +9,13 @@ const Button = styled.button`
   border-radius: 40px;
   width: 170px;
   height: 39px;
-  font-family: "Oswald";
   font-weight: 300;
   font-size: 18px;
   text-align: center;
   margin: inherit;
   display: block;
   cursor: pointer;
+  font-family: Oswald;
 `;
 
 export default function ({
