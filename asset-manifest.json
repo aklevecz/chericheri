@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/chericheri/static/css/main.8b24f734.chunk.css",
-    "main.js": "/chericheri/static/js/main.e47a1547.chunk.js",
-    "main.js.map": "/chericheri/static/js/main.e47a1547.chunk.js.map",
+    "main.js": "/chericheri/static/js/main.87c06de8.chunk.js",
+    "main.js.map": "/chericheri/static/js/main.87c06de8.chunk.js.map",
     "runtime-main.js": "/chericheri/static/js/runtime-main.de21bcd1.js",
     "runtime-main.js.map": "/chericheri/static/js/runtime-main.de21bcd1.js.map",
-    "static/js/2.6b526626.chunk.js": "/chericheri/static/js/2.6b526626.chunk.js",
-    "static/js/2.6b526626.chunk.js.map": "/chericheri/static/js/2.6b526626.chunk.js.map",
+    "static/js/2.e65bf8c9.chunk.js": "/chericheri/static/js/2.e65bf8c9.chunk.js",
+    "static/js/2.e65bf8c9.chunk.js.map": "/chericheri/static/js/2.e65bf8c9.chunk.js.map",
     "index.html": "/chericheri/index.html",
-    "precache-manifest.cae968f7eeb50a3d8f4d7bef68c82c8c.js": "/chericheri/precache-manifest.cae968f7eeb50a3d8f4d7bef68c82c8c.js",
+    "precache-manifest.aaafc42f5fbaa5de4b7622fbc66534d7.js": "/chericheri/precache-manifest.aaafc42f5fbaa5de4b7622fbc66534d7.js",
     "service-worker.js": "/chericheri/service-worker.js",
     "static/css/main.8b24f734.chunk.css.map": "/chericheri/static/css/main.8b24f734.chunk.css.map",
-    "static/js/2.6b526626.chunk.js.LICENSE.txt": "/chericheri/static/js/2.6b526626.chunk.js.LICENSE.txt",
+    "static/js/2.e65bf8c9.chunk.js.LICENSE.txt": "/chericheri/static/js/2.e65bf8c9.chunk.js.LICENSE.txt",
     "static/media/black.mp4": "/chericheri/static/media/black.d7048d2b.mp4",
     "static/media/cart.svg": "/chericheri/static/media/cart.26937366.svg",
+    "static/media/cherigrowfull.svg": "/chericheri/static/media/cherigrowfull.122e710b.svg",
     "static/media/cherrypool.svg": "/chericheri/static/media/cherrypool.b2c5d2bf.svg",
     "static/media/thc_oil_box_back.png": "/chericheri/static/media/thc_oil_box_back.54980efa.png",
     "static/media/thc_oil_box_front.png": "/chericheri/static/media/thc_oil_box_front.0c151770.png",
@@ -23,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.de21bcd1.js",
-    "static/js/2.6b526626.chunk.js",
+    "static/js/2.e65bf8c9.chunk.js",
     "static/css/main.8b24f734.chunk.css",
-    "static/js/main.e47a1547.chunk.js"
+    "static/js/main.87c06de8.chunk.js"
   ]
 }
