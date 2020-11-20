@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e8fe6d14831da22728533c943432d354",
+    "revision": "83b49cdd6c13b13a6529b2203a1a9021",
     "url": "/chericheri/index.html"
   },
   {
-    "revision": "b50bca91924ee95f844f",
+    "revision": "8635873d7d2a4899bf03",
     "url": "/chericheri/static/css/main.8b24f734.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chericheri/static/js/2.462207e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b50bca91924ee95f844f",
-    "url": "/chericheri/static/js/main.269cb963.chunk.js"
+    "revision": "8635873d7d2a4899bf03",
+    "url": "/chericheri/static/js/main.bda1baf5.chunk.js"
   },
   {
     "revision": "db92b0281da43e0b921d",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chericheri/static/media/cart.26937366.svg"
   },
   {
-    "revision": "c0332934ba1b5a086361c5b457b88cf7",
-    "url": "/chericheri/static/media/cherigrowfull.c0332934.svg"
+    "revision": "122e710ba102e2c652b2985947d025de",
+    "url": "/chericheri/static/media/cherigrowfull.122e710b.svg"
   },
   {
     "revision": "b2c5d2bf93bd2da6ab5cd0177138c73f",
