@@ -18,7 +18,11 @@ export default function () {
   const loadingContext = useContext(LoadingContext);
   const videoRef = useRef();
   const pageContainer = useRef();
-  const props = useSpring({ opacity: 1, from: { opacity: 0 } });
+  const props = useSpring({
+    config: { duration: 2000 },
+    opacity: 1,
+    from: { opacity: 0 },
+  });
   useEffect(() => {
     videoRef.current.onclick = () => {
       videoRef.current.play();

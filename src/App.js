@@ -30,17 +30,20 @@ function App() {
   });
   const device = useContext(DeviceContext);
   if (device.isMobile === undefined) return <div>loading...</div>;
-  console.log(location);
   return (
     // <Router basename="/">
     <>
       <Nav device={device} />
-      <Switch>
+      {/* {transitions.map(({ item: location, props, key }) => ( */}
+      {/* <animated.div key={key} style={props}> */}
+      <Switch location={location}>
         <Route path="/" exact component={Home} />
         <Route path="/product" component={Product} />
         {/* <Route path="/three" component={Three} /> */}
         <Route path="/fuck" render={() => <div>fuck</div>} />
       </Switch>
+      {/* </animated.div> */}
+      {/* ))} */}
       {/* <Switch>
           <Route path="/three" component={Three} />
           <Route path="/product" component={Product} />

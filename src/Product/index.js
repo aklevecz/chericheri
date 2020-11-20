@@ -21,7 +21,9 @@ export default function () {
     <div>
       {/* <Img /> */}
       {/* <Boxes /> */}
-      {loaded && <Three />}
+      <div style={{ height: 375 }}>
+        <Three loaded={loaded} />
+      </div>
       <Svg src={require("./cherigrowfull.svg")} onLoad={load} />
     </div>
     // </PageContainer>

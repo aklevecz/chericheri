@@ -1,12 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import front from "../assets/thc_oil_box_front.png";
 import back from "../assets/thc_oil_box_back.png";
 import side from "../assets/thc_oil_box_side.png";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-export default function () {
+
+export default function ({ loaded }) {
+  const canvasRef = useRef();
   useEffect(() => {
-    const canvas = document.getElementById("canvas");
+    if (!loaded) return;
+    const canvas = canvasRef.current;
     const height = window.innerWidth;
     const width = window.innerWidth;
     // console.log(width)
@@ -123,10 +126,13 @@ export default function () {
     }
     animate();
     return () => cancelAnimationFrame(frame);
-  }, []);
+  }, [loaded]);
   return (
-    <div>
-      <canvas style={{ display: "block", margin: "auto" }} id="canvas"></canvas>
+    <div style={{ opacity: loaded ? 1 : 0, transition: "opacity 5s" }}>
+      <canvas
+        style={{ display: "block", margin: "auto" }}
+        ref={canvasRef}
+      ></canvas>
     </div>
   );
 }
