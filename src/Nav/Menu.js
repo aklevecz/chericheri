@@ -71,7 +71,7 @@ export default function Menu({ openNav }) {
         className={openNav ? "in" : "out"}
         contentLeft={openNav ? 49 : -200}
       >
-        {/* <GetSome inverted={true} /> */}
+        <GetSome inverted={true} />
         <LinkGroup>
           <div>
             <Link name="thc aloe vera lube" />
