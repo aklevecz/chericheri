@@ -43,6 +43,8 @@ const LinkGroup = styled.div`
 
 const TextMe = () => (
   <div style={{ margin: 20 }}>
+    <div>FOR QUESTIONS</div>
+    <div>OR TO SAY HI</div>
     <div>TEXT "🍒" TO</div>
     {/* <div>TO</div> */}
     <div>+1 (386) 968-2989</div>
@@ -50,12 +52,12 @@ const TextMe = () => (
 );
 
 export default function Menu({ openNav }) {
-  const a = window.innerWidth + 100;
+  const a = window.innerWidth;
   const b = window.innerHeight;
   const c = Math.sqrt(a * a + b * b);
   const mobileAspect = window.innerHeight > window.innerWidth;
   const side = openNav ? 0 : -c;
-  const m = mobileAspect ? 0.0 : 0.5;
+  const m = mobileAspect ? 0 : 0.5;
   return (
     <>
       <Background
@@ -69,45 +71,21 @@ export default function Menu({ openNav }) {
         className={openNav ? "in" : "out"}
         contentLeft={openNav ? 49 : -200}
       >
-        <GetSome inverted={true} />
+        {/* <GetSome inverted={true} /> */}
         <LinkGroup>
           <div>
-            <Link name="about" />
+            <Link name="thc aloe vera lube" />
           </div>
           <div>
-            <Link name="find-us" />
+            <Link name="thc coconut oil lube" />
           </div>
         </LinkGroup>
         <LinkGroup>
+          <div>
+            <Link name="how it works" />
+          </div>
           <div>
             <Link name="faq" />
-          </div>
-          <div>
-            <Link name="blog" />
-          </div>
-        </LinkGroup>
-        <LinkGroup>
-          <div>
-            <Link name="lookbook" />
-          </div>
-          <div>
-            <Link name="tutorials" />
-          </div>
-        </LinkGroup>
-        <LinkGroup>
-          <div>
-            <Link name="wholesale" />
-          </div>
-          <div>
-            <Link name="terms" />
-          </div>
-        </LinkGroup>
-        <LinkGroup>
-          <div>
-            <Link name="collabs" />
-          </div>
-          <div>
-            <Link name="pr" />
           </div>
         </LinkGroup>
         <TextMe />
@@ -115,3 +93,4 @@ export default function Menu({ openNav }) {
     </>
   );
 }
+//-1956.103082px
