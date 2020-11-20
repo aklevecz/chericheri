@@ -6,16 +6,20 @@ export const Container = styled.div`
   left: 50%;
   top: 50%;
   width: 300px;
-  height: 150px;
+  height: 250px;
   margin-left: calc(300px / 2 * -1);
-  margin-top: calc(150px / 2 * -1);
+  margin-top: calc(250px / 2 * -1);
   background: white;
   text-align: center;
   z-index: 999;
-  padding: 5px;
+  padding: 14px;
   border-radius: 20px;
   transition: opacity 1s;
   /* opacity: ${(props) => props.opacity}; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Wrapper = styled.div`

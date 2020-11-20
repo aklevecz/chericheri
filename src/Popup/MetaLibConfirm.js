@@ -24,25 +24,27 @@ export default function MetaLibConfirm() {
 
   return (
     <Container>
-      {affirmation === undefined && (
-        <>
-          <Wrapper>{popContext.content.metalib}</Wrapper>
-          <ButtonContainer>
-            <Button onClick={yes}>Send it</Button>
-            <Button onClick={no}>Wait no!</Button>
-          </ButtonContainer>
-        </>
-      )}
-      {affirmation === true && (
-        <>
-          <Wrapper ref={welcomeRef}>Sent!</Wrapper>
-        </>
-      )}
-      {affirmation === false && (
-        <>
-          <Wrapper>Okay!</Wrapper>
-        </>
-      )}
+      <div id="popup-wrapper">
+        {affirmation === undefined && (
+          <>
+            <Wrapper>{popContext.content.metalib}</Wrapper>
+            <ButtonContainer>
+              <Button onClick={yes}>Send it</Button>
+              <Button onClick={no}>Wait no!</Button>
+            </ButtonContainer>
+          </>
+        )}
+        {affirmation === true && (
+          <>
+            <Wrapper ref={welcomeRef}>Sent!</Wrapper>
+          </>
+        )}
+        {affirmation === false && (
+          <>
+            <Wrapper>Okay!</Wrapper>
+          </>
+        )}
+      </div>
     </Container>
   );
 }
