@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/chericheri/static/css/main.8b24f734.chunk.css",
-    "main.js": "/chericheri/static/js/main.84cb7f89.chunk.js",
-    "main.js.map": "/chericheri/static/js/main.84cb7f89.chunk.js.map",
+    "main.js": "/chericheri/static/js/main.8e28b3dc.chunk.js",
+    "main.js.map": "/chericheri/static/js/main.8e28b3dc.chunk.js.map",
     "runtime-main.js": "/chericheri/static/js/runtime-main.de21bcd1.js",
     "runtime-main.js.map": "/chericheri/static/js/runtime-main.de21bcd1.js.map",
     "static/js/2.57939b22.chunk.js": "/chericheri/static/js/2.57939b22.chunk.js",
     "static/js/2.57939b22.chunk.js.map": "/chericheri/static/js/2.57939b22.chunk.js.map",
     "index.html": "/chericheri/index.html",
-    "precache-manifest.d22229b34f146751cb7a1e12d2ad0a17.js": "/chericheri/precache-manifest.d22229b34f146751cb7a1e12d2ad0a17.js",
+    "precache-manifest.a9129da56b7ee3939082423bb3cb8756.js": "/chericheri/precache-manifest.a9129da56b7ee3939082423bb3cb8756.js",
     "service-worker.js": "/chericheri/service-worker.js",
     "static/css/main.8b24f734.chunk.css.map": "/chericheri/static/css/main.8b24f734.chunk.css.map",
     "static/js/2.57939b22.chunk.js.LICENSE.txt": "/chericheri/static/js/2.57939b22.chunk.js.LICENSE.txt",
     "static/media/black.mp4": "/chericheri/static/media/black.d7048d2b.mp4",
     "static/media/cart.svg": "/chericheri/static/media/cart.26937366.svg",
-    "static/media/cherigrowfull.svg": "/chericheri/static/media/cherigrowfull.122e710b.svg",
     "static/media/cherrypool.svg": "/chericheri/static/media/cherrypool.b2c5d2bf.svg",
     "static/media/thc_oil_box_back.png": "/chericheri/static/media/thc_oil_box_back.54980efa.png",
     "static/media/thc_oil_box_front.png": "/chericheri/static/media/thc_oil_box_front.0c151770.png",
@@ -26,6 +25,6 @@
     "static/js/runtime-main.de21bcd1.js",
     "static/js/2.57939b22.chunk.js",
     "static/css/main.8b24f734.chunk.css",
-    "static/js/main.84cb7f89.chunk.js"
+    "static/js/main.8e28b3dc.chunk.js"
   ]
 }
