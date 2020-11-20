@@ -55,7 +55,6 @@ app.get("/", (request, response) => {
 // endpoint to get all the dreams in the database
 app.get("/get-metaphors", (request, response) => {
   db.all("SELECT * from Metaphors", (err, rows) => {
-    console.log(rows);
     response.send(JSON.stringify(rows));
   });
 });

@@ -5,6 +5,7 @@ import "./index.css";
 import "./animations.css";
 import PopupProvider from "./Popup";
 import LoadingProvder from "./Bits/Loading/Context";
+import { HashRouter as Router } from "react-router-dom";
 export const DeviceContext = createContext(undefined);
 
 const DeviceProvider = ({ children }) => {
@@ -35,7 +36,9 @@ ReactDOM.render(
     <DeviceProvider>
       <PopupProvider>
         <LoadingProvder>
-          <App />
+          <Router basename="/">
+            <App />
+          </Router>
         </LoadingProvder>
       </PopupProvider>
     </DeviceProvider>

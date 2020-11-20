@@ -5,12 +5,13 @@ export const NavContext = createContext(undefined);
 
 const pageRoot = () => document.getElementById("page-root");
 
-window.addEventListener("popstate", (e) => e.preventDefault());
+// window.addEventListener("popstate", (e) => e.preventDefault());
 export default function NavProvider({ children }) {
   const history = useHistory();
   const goToProduct = () => {
-    pageRoot().style.transform = "translateX(-100%)";
-    setTimeout(() => history.push("/product"), 1000);
+    console.log(history);
+    // pageRoot().style.transform = "translateX(-100%)";
+    // setTimeout(() => history.push("/product"), 1000);
   };
 
   const goBack = () => {

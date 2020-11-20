@@ -4,9 +4,6 @@ import front from "../assets/thc_oil_box_front.png";
 import back from "../assets/thc_oil_box_back.png";
 import side from "../assets/thc_oil_box_side.png";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import object from "../assets/model.json";
-import { LinearFilter } from "three";
-// import * as OrbitControls from "../../node_modules/three/examples/jsm/controls/OrbitControls";
 export default function () {
   useEffect(() => {
     const canvas = document.getElementById("canvas");
@@ -114,16 +111,18 @@ export default function () {
     // scene.add(o);
     document.addEventListener("pointerup", myOnMouseDownFunction, false);
     function myOnMouseDownFunction(evt) {
-      evt.preventDefault();
+      // evt.preventDefault();
       // return alert("wat");
     }
+    let frame;
     function animate() {
-      requestAnimationFrame(animate);
+      frame = requestAnimationFrame(animate);
       //   cube.rotation.y += 0.01;
       controls.update();
       renderer.render(scene, camera);
     }
     animate();
+    return () => cancelAnimationFrame(frame);
   }, []);
   return (
     <div>

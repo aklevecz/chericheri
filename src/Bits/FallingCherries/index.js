@@ -20,6 +20,7 @@ export default function () {
 
     const cherryWater = () => {
       const lastCherry = document.getElementById("cherry6");
+      if (!lastCherry) return;
       lastCherry.style.transform = "translateY(600px)";
       lastCherry.style.opacity = 0;
       setPlaying(false);

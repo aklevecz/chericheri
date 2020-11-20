@@ -9,7 +9,7 @@ import blackBoxVideo from "../assets/black.mp4";
 import Cherry from "../Bits/Loading/Cherry";
 import Triangles from "../Bits/Triangles";
 import { LoadingContext } from "../Bits/Loading/Context";
-
+import { animated, useSpring } from "react-spring";
 const aspect = 1024 / 688.02;
 
 export default function () {
@@ -18,6 +18,7 @@ export default function () {
   const loadingContext = useContext(LoadingContext);
   const videoRef = useRef();
   const pageContainer = useRef();
+  const props = useSpring({ opacity: 1, from: { opacity: 0 } });
   useEffect(() => {
     videoRef.current.onclick = () => {
       videoRef.current.play();
@@ -25,18 +26,19 @@ export default function () {
     videoRef.current.src = blackBoxVideo;
     videoRef.current.onloadeddata = () => loadingContext.endLoading();
 
-    setTimeout(
-      () =>
-        (document.getElementById("home").style.transform = "translateX(0%)"),
-      100
-    );
+    // setTimeout(
+    //   () =>
+    //     (document.getElementById("home").style.transform = "translateX(0%)"),
+    //   100
+    // );
   }, []);
 
   return (
-    <div
+    <animated.div
+      style={props}
       id="home"
       className="page-container"
-      style={{ transition: "transform 1s", transform: "translateX(100%)" }}
+      // style={{ transition: "transform 1s", transform: "translateX(100%)" }}
     >
       {/* <Nav /> */}
       {/* <Row src={cheri} /> */}
@@ -88,6 +90,6 @@ export default function () {
           mixBlendMode: "difference",
         }}
       ></div> */}
-    </div>
+    </animated.div>
   );
 }
