@@ -67,7 +67,7 @@
     <g id="sky">
         <g style="clip-path:url(#clip-path)">
             <image width="600" height="452" transform="translate(-124.98 1577.04) scale(2.29 2.05)"
-                xlink:href="https://traysimay.github.io/chericheri/sky.gif" />
+                xlink:href="https://chericheri.shop/sky.gif" />
         </g>
         <path id="tri15-2" data-name="tri15" d="M293.25,2062.27,562,2505.44,1125,1577H-1Z"
             style="fill:none;stroke:#fff;stroke-miterlimit:10" />
